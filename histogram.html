@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <h1>Histogram Generator</h1>
+    <body onload="start()">
+        <input id="fileInput" type="file" name="file" />
+        <pre id="fileContent"></pre>
+    </body>
+
+    <div id="lowerBound">
+        <h2>Lower bounds</h2>
+
+        <form id="FORM" onsubmit="return false;">
+            <label for="Max">Max</label><br>
+            <input type="text" id="max" value="100.00"><br>
+
+            <label for="aPlus">A+</label><br>
+            <input type="text" id="aPlus" value="95.00"><br>
+
+            <label for="a">A</label><br>
+            <input type="text" id="a" value="90.00"><br>
+
+            <label for="aMinus">A-</label><br>
+            <input type="text" id="aMinus" value="85.00"><br>
+
+            <label for="bPlus">B+</label><br>
+            <input type="text" id="bPlus" value="80.00"><br>
+
+            <label for="b">B</label><br>
+            <input type="text" id="b" value="75.00"><br>
+
+            <label for="bMinus">B-</label><br>
+            <input type="text" id="bMinus" value="70.00"><br>
+
+            <label for="cPlus">C+</label><br>
+            <input type="text" id="cPlus" value="65.00"><br>
+
+            <label for="c">C</label><br>
+            <input type="text" id="c" value="60.00"><br>
+
+            <label for="cMinus">C-</label><br>
+            <input type="text" id="cMinus" value="55.00"><br>
+
+            <label for="d">D</label><br>
+            <input type="text" id="d" value="50.00"><br>
+
+            <label for="f">F</label><br>
+            <input type="text" id="f" value="0.00"><br>
+        </form>
+    </div>
+
+    <div id="Histogram">
+        <h2>Histogram</h2>
+        <div class="numberResult">
+            <label>A+</label><br>
+            <div class="result">
+                <label id="histogramAPlus">0</label><br>
+            </div>
+
+            <label>A+</label><br>
+            <div class="result">
+                <label id="histogramA">0</label><br>
+            </div>
+
+            <label>A-</label><br>
+            <div class="result">
+                <label id="histogramAMinus">0</label><br>
+            </div>
+
+            <label>B+</label><br>
+            <div class="result">
+                <label id="histogramBPlus">0</label><br>
+            </div>
+
+            <label>B</label><br>
+            <div class="result">
+                <label id="histogramB">0</label><br>
+            </div>
+
+            <label>B-</label><br>
+            <div class="result">
+                <label id="histogramBMinus">0</label><br>
+            </div>
+
+            <label>C+</label><br>
+            <div class="result">
+                <label id="histogramCPlus">0</label><br>
+            </div>
+
+            <label>C</label><br>
+            <div class="result">
+                <label id="histogramC">0</label><br>
+            </div>
+
+            <label>C-</label><br>
+            <div class="result">
+                <label id="histogramCMinus">0</label><br>
+            </div>
+
+            <label>D</label><br>
+            <div class="result">
+                <label id="histogramD">0</label><br>
+            </div>
+
+            <label>F</label><br>
+            <div class="result">
+                <label id="histogramF">0</label><br>
+            </div>
+
+        </div>
+
+
+    <div id="stats">
+        <h2>Stats</h2>
+        <div class="statSection">
+            <label>Highest</label><br>
+            <div class="statResult">
+                <label id="statHighest">NA</label><br>
+            </div>
+
+            <label>Lowest</label><br>
+            <div class="statResult">
+                <label id="statLowest">NA</label><br>
+            </div>
+
+            <label>Mean</label><br>
+            <div class="statResult">
+                <label id="statMean">NA</label><br>
+            </div>
+
+            <label>Median</label><br>
+            <div class="statResult">
+                <label id="statMedian">NA</label><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

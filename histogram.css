@@ -1,0 +1,55 @@
+body{
+    margin-left: 5vw;
+    background-color: darkgray;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+h2{
+    color: rgb(241, 78, 78);
+}
+
+#lowerBound{
+    float: left;
+}
+
+#lowerBound form{
+    margin: 20px;
+}
+
+#lowerBound input{
+    margin-left: 7vw;
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    transform: translateY(-23px);
+}
+
+#lowerBound input:hover{
+    box-shadow: 5px 10px #888888;
+}
+
+#Histogram{
+    float: right;
+    margin-right: 35vw;
+}
+
+.result{
+    margin-left: 8vw;
+    transform: translateY(-18px);
+}
+
+.numberResult{
+    margin-left: 2vw;
+}
+
+#stats{
+    transform: translateY(-20px);
+}
+.statSection{
+    margin-left: 2vw;
+}
+.statResult{
+    margin-left: 8vw;
+    transform: translateY(-18px);
+}
