@@ -4,4 +4,4 @@ A grade histogram using calculates metrics like median, mean and the number of p
 
 ## Usage
 
-Import a .csv file with two columns, first with student name and second with the grade. Adjust percentage thresholds for 
+Import a .csv file with two columns, first with student name and second with the grade. Can adjust percentage thresholds for each grade letter.
